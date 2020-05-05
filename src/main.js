@@ -10,8 +10,17 @@ import locale from 'element-ui/lib/locale/lang/ja'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'element-ui/lib/theme-chalk/display.css'
 
+
+// add Bootstrap
+import BootstrapVue from 'bootstrap-vue'
+
 Vue.config.productionTip = false
 Vue.use(ElementUI, { locale })
+Vue.use(BootstrapVue)
+
+
+import 'bootstrap/dist/css/bootstrap.css' // added
+import 'bootstrap-vue/dist/bootstrap-vue.css' // added
 
 /* eslint-disable no-new */
 new Vue({
